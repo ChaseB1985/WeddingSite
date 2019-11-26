@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Services Page</title>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link type="text/css" rel="stylesheet" href="/styles.css" />
+
+  <!--Scripts for slider.js on and nav color change-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/colorchange.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/12bc9e4a83.js"></script>
+
+
+</head>
+
+
+<body>
+
+  <!--"change" is the jquery code used to change the nav bar color-->
+  <div class="jumbotron prodtron change">
+    <div class="container text-center">
+      <a href="/index"><img src="../images/niceMDlogo.png " class="logoId" alt="Enchanted Lighting">
+      </a>
+      <p>Highland Park, TX</p>
+    </div>
+  </div>
+  <!-- Nav bar -->
+  <nav class="navbar navbar-inverse">
+    <a class="navbar-brand" href="/index">Enchanted Lighting</a>
+    <div class="navbar-center">
+      <span class="nav-icon">
+
+      </span>
+      <div class="navbar-header">
+        <!-- not sure if this is for mobile -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      </div>
+      <div class="collapse navbar-collapse" id="#myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="/products">Products</a></li>
+          <li class="active"><a href="/services">Services</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+
+      </div>
+
+      <div class="cart-btn">
+        <span class="nav-icon">
+          <i class="fas fa-cart-plus"></i>
+        </span>
+        <div class="cart-items">0</div>
+      </div>
+    </div>
+  </nav>
+  <!-- end of Nav bar -->
+
+
+  <div class="container">
+
+    <div class="text-center">
+      <h1>Services Page</h1>
+      <br>
+      <p class="lead">Lamp Repairs: $5.00<br> Lamp Wax: $3.50</p>
+    </div>
+
+  </div><!-- /.container -->
+
+  <div class="jumbotron lampvideo">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 lefttext">
+
+          <h1 class="display-4">Watch Randy Make a Lamp</h1>
+          <p class="lead">If you are lucky and come into the store at the right time you will
+            be able to see Randy work his magic like in the video shown here. You can also call him 
+            and let him know when you are coming by for a presentation. </p>
+
+        </div>
+        <div class="col-md-6 vidcol">
+          <video class="custlampvid" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="/images/lampbuildvid.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- cart -->
+  <div class="cart-overlay">
+    <div class="cart">
+      <span class="close-cart">
+        <i class="fas fa-window-close"></i>
+      </span>
+      <h2>your cart</h2>
+      <div class="cart-content">
+        <!-- cart item -->
+        <!-- <div class="cart-item">
+          
+        </div> -->
+        <!-- end of cart item -->
+      </div>
+      <div class="cart-footer">
+        <h3>your total: $ <span class="cart-total">0
+          </span> </h3>
+        <button class="clear-cart banner-btn">clear cart</button>
+      </div>
+    </div>
+  </div>
+  <!-- end of cart -->
+
+  <footer class="container-fluid text-center">
+    <p>Online Store Copyright</p>
+    <form class="form-inline">Get deals:
+      <input type="email" class="form-control" size="50" placeholder="Email Address">
+      <button type="button" class="btn btn-danger">Sign Up</button>
+    </form>
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.plugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.countdown.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+  <!-- add contentful link here later  -->
+  <script type="text/javascript" src="/js/app.js"></script>
+
+
+
+</body>
+
+</html>

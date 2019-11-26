@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home Page</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link type="text/css" rel="stylesheet" href="/styles.css" />
+
+  <script src="https://kit.fontawesome.com/12bc9e4a83.js"></script>
+
+  <!--Scripts for slider.js on and nav color change-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/colorchange.js"></script>
+  <!-- <script type="text/javascript" src="/js/slider.js"></script> -->
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/12bc9e4a83.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+
+  <!--"change" is the jquery code used to change the nav bar color-->
+
+  <div class="jumbotron prodtron change">
+    <div class="container text-center">
+      <a href="/index"><img src="../images/niceMDlogo.png " class="logoId" alt="Enchanted Lighting">
+      </a>
+      <p>Highland Park, TX</p>
+    </div>
+  </div>
+
+
+  <!-- Nav bar -->
+  <nav class="navbar navbar-inverse">
+    <a class="navbar-brand" href="/index">Enchanted Lighting</a>
+    <div class="navbar-center">
+      <span class="nav-icon">
+
+      </span>
+      <div class="navbar-header">
+        <!-- not sure if this is for mobile -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      </div>
+      <div class="collapse navbar-collapse" id="#myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="/products">Products</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+
+      </div>
+
+      <div class="cart-btn">
+        <span class="nav-icon">
+          <i class="fas fa-cart-plus"></i>
+        </span>
+        <div class="cart-items">0</div>
+      </div>
+    </div>
+  </nav>
+  <!-- end of Nav bar -->
+
+
+
+  <div class="container">
+    <h2>Some Of My Works</h2>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+
+        <div class="item active">
+          <img src="../images/lamp20.jpg" alt="Los Angeles" style="width:100%; height: 500px;">
+          <div class="carousel-caption">
+            <h3>Asian Lamp</h3>
+            <p>Asian Lamps go great in your house!</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="../images/lamp12.jpg" alt="Chicago" style="width:100%; height: 500px;">
+          <div class="carousel-caption">
+            <h3>Rock Lamp</h3>
+            <p>A lamp I made out of some rocks I found!</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="../images/lamp3.jpg" alt="New York" style="width:100%; height: 500px;">
+          <div class="carousel-caption">
+            <h3>Double Lamp</h3>
+            <p>I dont know what I was thinking when I made this!</p>
+          </div>
+        </div>
+
+      </div>
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <div id="clock">
+    <div id="countdownText" style="padding:10px">
+      <span class="open">We Will Be Back In</span>
+      <span class="close">Time Left to Buy a Lamp Today</span>
+    </div>
+    <div id="timer"></div>
+  </div>
+
+  <!-- cart -->
+  <div class="cart-overlay">
+    <div class="cart">
+      <span class="close-cart">
+        <i class="fas fa-window-close"></i>
+      </span>
+      <h2>your cart</h2>
+      <div class="cart-content">
+        <!-- cart item -->
+        <!-- <div class="cart-item">
+          
+        </div> -->
+        <!-- end of cart item -->
+      </div>
+      <div class="cart-footer">
+        <h3>your total: $ <span class="cart-total">0
+          </span> </h3>
+        <button class="clear-cart banner-btn">clear cart</button>
+      </div>
+    </div>
+  </div>
+  <!-- end of cart -->
+  <!-- add contentful link here later  -->
+
+
+
+  <footer class="container-fluid text-center">
+    <p>Online Store Copyright</p>
+    <form class="form-inline">Get deals:
+      <input type="email" class="form-control" size="50" placeholder="Email Address">
+      <button type="button" class="btn btn-danger">Sign Up</button>
+    </form>
+  </footer>
+
+
+
+
+  <!-- <footer>
+    <div id="clock">
+      <div id="countdownText" style="padding:10px">
+        <span class="open">We Will Be Back In</span>
+        <span class="close">Time Left to Buy a Lamp Today</span>
+      </div>
+      <div id="timer"></div>
+    </div>
+  </footer> -->
+
+
+  <script type="text/javascript" src="/js/app.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.plugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.countdown.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+
+  <script type="text/javascript" src="/js/clock.js"></script>
+  <!-- <script language="javascript" type="text/javascript" src="../public/js/clock.js"></script> -->
+
+
+  <script>
+    (function (document, window, undefined) {
+      'use strict';
+
+      var toggleNav = function () {
+        if ($('.site-canvas').hasClass('site-canvas--active')) {
+          // Nav Close
+          $('.site-canvas').removeClass('site-canvas--active');
+          $('.close-canvas').removeClass('close-canvas--active');
+        } else {
+          // Nav Open
+          $('.site-canvas').addClass('site-canvas--active');
+          $('.close-canvas').addClass('close-canvas--active');
+        }
+      }
+
+      // Toggle Nav on Click
+      $('.toggle-nav, .close-canvas').click(function () {
+        toggleNav();
+      });
+
+    })(document, window);
+  </script>
+</body>
+
+
+</html>
