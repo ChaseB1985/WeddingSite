@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--meta charset was commented out so if style sheet not loading it mat have something to do with this-->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Products Page</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Vidaloka"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <!-- <link type="text/css" rel="stylesheet" href="/products.css" /> -->
+    <link type="text/css" rel="stylesheet" href="/css/main.css" />
+
+    <!--Scripts for slider.js on and nav color change-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/colorchange.js"></script>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/12bc9e4a83.js"></script>
+  </head>
+
+  <body>
+    <!-- Nav bar -->
+    <div class="page">
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__group">
+            <a href="/index" class="menu__link">Welcome</a>
+          </li>
+          <li class="menu__group">
+            <a href="/registry" class="menu__link">Registry</a>
+          </li>
+          <li class="menu__group">
+            <a href="/photos" class="menu__link">Photos</a>
+          </li>
+          <li class="menu__group">
+            <a href="/events" class="menu__link">Events</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- end of Nav bar -->
+    <div class="container">
+      <div class="image">
+        <form class="form-style-9">
+          <ul>
+            <li>
+              <input
+                type="text"
+                name="field1"
+                class="field-style field-split align-left"
+                placeholder="Name"
+              />
+              <input
+                type="email"
+                name="field2"
+                class="field-style field-split align-right"
+                placeholder="Email"
+              />
+            </li>
+            <li>
+              <input
+                type="text"
+                name="field3"
+                class="field-style field-split align-left"
+                placeholder="Phone"
+              />
+              <input
+                type="url"
+                name="field4"
+                class="field-style field-split align-right"
+                placeholder="Website"
+              />
+            </li>
+            <li>
+              <input
+                type="text"
+                name="field3"
+                class="field-style field-full align-none"
+                placeholder="Subject"
+              />
+            </li>
+            <li>
+              <textarea
+                name="field5"
+                class="field-style"
+                placeholder="Message"
+              ></textarea>
+            </li>
+            <li>
+              <input type="submit" value="Send Message" />
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="/js/app.js"></script>
+  </body>
+</html>

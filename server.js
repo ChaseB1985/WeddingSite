@@ -1,5 +1,4 @@
-﻿
-// ==============================================================================
+﻿// ==============================================================================
 // DEPENDENCIES
 // Series of npm packages that we will use to give our server useful functionality
 // ==============================================================================
@@ -23,9 +22,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Sets up path from assets*******************
-app.use(express.static('public'));
-app.use('/images', express.static('public'));
-app.use('/js', express.static('public'));
+app.use(express.static("public"));
+app.use("/css", express.static("public"));
+app.use("/photos", express.static("public"));
+app.use("/js", express.static("public"));
 
 // ================================================================================
 // ROUTER
@@ -41,6 +41,6 @@ require("./routes/htmlRoutes")(app);
 // The below code effectively "starts" our server
 // =============================================================================
 
-app.listen(PORT, function () {
-    console.log("App listening on PORT: " + PORT);
+app.listen(PORT, function() {
+  console.log("App listening on PORT: " + PORT);
 });

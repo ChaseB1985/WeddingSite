@@ -4,7 +4,6 @@
 // ===============================================================================
 var path = require("path");
 
-
 // ===============================================================================
 // ROUTING
 // ===============================================================================
@@ -15,18 +14,16 @@ module.exports = function(app) {
   // In each of the below cases the user is shown an HTML page of content
   // ---------------------------------------------------------------------------
 
-  
-
-  app.get("/products", function(req, res) {
-    res.sendFile(path.join(__dirname, "../views/products.html"));
+  app.get("/registry", function(req, res) {
+    res.sendFile(path.join(__dirname, "../views/registry.html"));
   });
 
-  app.get("/contact", function(req, res) {
-    res.sendFile(path.join(__dirname, "../views/contact.html"));
+  app.get("/events", function(req, res) {
+    res.sendFile(path.join(__dirname, "../views/events.html"));
   });
 
-  app.get("/services", function(req, res) {
-    res.sendFile(path.join(__dirname, "../views/services.html"));
+  app.get("/photos", function(req, res) {
+    res.sendFile(path.join(__dirname, "../views/photos.html"));
   });
 
   // If no matching route is found default to home
